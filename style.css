@@ -1,0 +1,117 @@
+
+
+body {
+    margin: 0;
+    font-family: 'Anonymous Pro', monospace;
+    background-color: #0f172a;
+    color: white;
+  }
+  
+  h1 {
+    font-family: 'Playfair Display', serif;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #0f172a;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .contact-btn {
+    background-color: #fcd9c4;
+    color: black;
+  }
+  
+  .hero {
+    position: relative;
+    text-align: left;
+    color: white;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    max-width: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem;
+    margin: 0 0 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .purple-btn {
+    background-color: #c084fc;
+    color: white;
+    display: inline-block;
+    margin-top: 0.5rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    height: 20px;
+  }
+  
+/* Vervang of update de .logo class */
+.logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-logo {
+    height: 40px;
+    width: auto;
+    display: block;
+  }
+
+  .hero-logo {
+    position: absolute;
+    bottom: 15%;
+    right: 25px;
+    z-index: 2;
+  }
+  
+  .hero-bottom-logo {
+    height: 60px;
+    width: auto;
+  }
+  
+  
+  
+  .promo-section {
+    background-color: #0f172a;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .promo-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
