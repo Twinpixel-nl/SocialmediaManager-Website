@@ -1,115 +1,104 @@
-
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
-
 body {
-    margin: 0;
-    font-family: 'Anonymous Pro', monospace;
-    background-color: #0f172a;
-    color: white;
-  }
-  
-  h1 {
-    font-family: 'Playfair Display', serif;
-  }
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background: #0f172a;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-    padding-left: 0;
-    margin: 0;
-  }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  .btn {
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  .contact-btn {
-    background-color: #fcd9c4;
-    color: black;
-  }
-  
-  .hero {
-    position: relative;
-    text-align: left;
-    color: white;
-  }
-  
-  .hero-image {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .hero-content {
-    position: absolute;
-    top: 25%;
-    left: 10%;
-    max-width: 50%;
-  }
-  
-  .hero-content h1 {
-    font-size: 4rem;
-    margin: 0 0 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-  }
-  
-  .purple-btn {
-    background-color: #c084fc;
-    color: white;
-    display: inline-block;
-    margin-top: 0.5rem;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    height: 20px;
-  }
-  
-/* Vervang of update de .logo class */
-.logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-logo {
-    height: 40px;
-    width: auto;
-    display: block;
-  }
+  font-family: 'Anonymous Pro', monospace;
+  background-color: #0f172a;
+  color: white;
+}
 
-  .hero-logo {
-    position: absolute;
-    bottom: 15%;
-    right: 25px;
-    z-index: 2;
-  }
-  
-  .hero-bottom-logo {
-    height: 60px;
-    width: auto;
-  }
-  
-  
-  /* Algemeen voor promo-secties */
+h1 {
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #0f172a;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding-left: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.contact-btn {
+  background-color: #fcd9c4;
+  color: black;
+}
+
+.purple-btn {
+  background-color: #c084fc;
+  color: white;
+  margin-top: 0.5rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.orange-btn {
+  background-color: #fcd9c4;
+  color: #0f172a;
+}
+
+.hero {
+  position: relative;
+  text-align: left;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-content {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin: 0 0 1rem;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  line-height: 1.2;
+}
+
+.hero-logo {
+  position: absolute;
+  bottom: 10%;
+  right: 40px;
+  z-index: 2;
+}
+
+.hero-bottom-logo {
+  height: 70px;
+  width: auto;
+}
+
 .promo-section {
   padding: 6rem 2rem;
   max-width: 1000px;
@@ -119,7 +108,6 @@ body {
   color: white;
 }
 
-/* Titels */
 .promo-section h2 {
   font-family: 'Playfair Display', serif;
   font-size: 2.4rem;
@@ -128,7 +116,6 @@ body {
   color: #fcd9c4;
 }
 
-/* Paragrafen */
 .promo-section p {
   font-size: 1.1rem;
   line-height: 1.8;
@@ -137,46 +124,105 @@ body {
   color: #e0e0e0;
 }
 
-/* Lijststijl bij 'Wat wij doen' */
-.promo-section ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 2rem;
+.about-preview {
+  background-color: #f8f8f8;
+  padding: 5rem 2rem;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-text h2 {
+  color: #0f172a;
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.about-text p {
+  color: #2a2a2a;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 1rem 0 2rem;
+}
+
+.about-logo img {
+  max-width: 250px;
+  height: auto;
+}
+
+.features {
+  background-color: #0f172a;
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.features h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  color: #fcd9c4;
+  margin-bottom: 2rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.feature-item {
+  background-color: #131c35;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
   align-items: center;
+  text-align: center;
 }
 
-.promo-section li {
-  font-size: 1.1rem;
-  color: #ffffff;
-  position: relative;
-  padding-left: 2rem;
+.feature-item img {
+  height: 40px;
+  margin-bottom: 1rem;
 }
 
-.promo-section li::before {
-  content: '⭐';
-  position: absolute;
-  left: 0;
-  top: 0;
+.feature-item p {
+  font-size: 1rem;
+  color: #e0e0e0;
+  line-height: 1.5;
 }
 
-/* Responsiveness */
 @media (max-width: 768px) {
-  .promo-section {
-    padding: 4rem 1.5rem;
+  .hero-content h1 {
+    font-size: 2.5rem;
   }
 
-  .promo-section h2 {
+  .promo-section h2,
+  .features h2 {
     font-size: 2rem;
   }
 
   .promo-section p,
-  .promo-section li {
+  .feature-item p,
+  .about-text p {
     font-size: 1rem;
   }
 }
+
 
 
   .about-hero {
@@ -233,7 +279,7 @@ body {
     font-size: 2.5rem;
     line-height: 1.2;
     margin: 0;
-    color: #0f172a;
+    color: #0f172a !important;
   }
   
   .about-text h1 span {
@@ -263,6 +309,7 @@ body {
     display: block;
   }
 
+  
   .page-title {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
