@@ -109,17 +109,76 @@ body {
   }
   
   
-  
+  /* Algemeen voor promo-secties */
+.promo-section {
+  padding: 6rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #0f172a;
+  color: white;
+}
+
+/* Titels */
+.promo-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #fcd9c4;
+}
+
+/* Paragrafen */
+.promo-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #e0e0e0;
+}
+
+/* Lijststijl bij 'Wat wij doen' */
+.promo-section ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.promo-section li {
+  font-size: 1.1rem;
+  color: #ffffff;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.promo-section li::before {
+  content: '⭐';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
   .promo-section {
-    background-color: #0f172a;
-    padding: 4rem 2rem;
-    text-align: center;
+    padding: 4rem 1.5rem;
   }
-  
+
   .promo-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
   }
+
+  .promo-section p,
+  .promo-section li {
+    font-size: 1rem;
+  }
+}
+
+
   .about-hero {
     display: flex;
     align-items: center;
