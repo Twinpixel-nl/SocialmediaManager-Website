@@ -128,15 +128,16 @@ body {
 }
 
 .logo-subpage {
-    position: absolute;
-    height: 400px;
-    width: auto;
-    left: 20px; /* Positioned closer to the left */
-    top: 90px; /* Positioned closer to the top */
-    z-index: 2;
-    object-fit: contain;
-    opacity: 1; /* Ensure full visibility */
+  position: relative;
+  height: 260px;
+  width: auto;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
+
 
 .logo-page {
     height: 100%; /* Inherit the height from the parent */
@@ -144,17 +145,22 @@ body {
     display: block; /* Ensure proper rendering */
 }
   
-  .about-left {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
+.about-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
   
-  .about-text {
-    text-align: left;
-    margin-top: 80px;
-  }
+.about-text {
+  text-align: center;
+  margin-top: 1rem;
+}
+
   
   .about-text h1 {
     font-family: 'Playfair Display', serif;
