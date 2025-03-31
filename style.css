@@ -1,4 +1,10 @@
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 
 body {
     margin: 0;
@@ -185,16 +191,18 @@ body {
   
   .about-right {
     flex: 1;
-    min-width: 300px;
+    min-height: 100%;
   }
+  
   
   .about-right img {
     width: 100%;
     height: 100%;
-    clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
     object-fit: cover;
     display: block;
   }
+
+  
   .about-text {
     text-align: left;
     margin-top: 80px;
