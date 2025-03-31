@@ -117,32 +117,36 @@ body {
   .about-hero {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #f8f8f8;
-    padding: 0 3rem;
-    padding-bottom: 6rem;
-    position: relative; /* Ensure relative positioning for child elements */
+    padding: 2rem 3rem;
+    position: relative;
     overflow: hidden;
     gap: 2rem;
-    flex-wrap: wrap;
-}
+    flex-wrap: nowrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    transform: scale(0.9);
+    transform-origin: top center;
+    border-radius: 1rem;
+  }
 
-.logo-subpage {
-    position: absolute;
-    height: 400px;
+  .logo-subpage {
+    position: relative;
+    height: 360px;
     width: auto;
-    left: 20px; /* Positioned closer to the left */
-    top: 90px; /* Positioned closer to the top */
     z-index: 2;
-    object-fit: contain;
-    opacity: 1; /* Ensure full visibility */
-}
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.logo-page {
-    height: 100%; /* Inherit the height from the parent */
-    width: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure proper rendering */
-}
+  .logo-page {
+    max-height: 100%;
+    width: auto;
+    display: block;
+  }
   
   .about-left {
     flex: 1;
@@ -187,5 +191,14 @@ body {
     clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
     object-fit: cover;
     display: block;
+  }
+  
+  .page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+    color: white;
   }
   
