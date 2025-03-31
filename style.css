@@ -126,7 +126,6 @@ body {
     justify-content: space-between;
     background-color: #f8f8f8;
     padding: 0 3rem;
-    padding-bottom: 6rem;
     position: relative; /* Ensure relative positioning for child elements */
     overflow: hidden;
     gap: 2rem;
@@ -164,7 +163,9 @@ body {
   
 .about-text {
   margin-top: 1rem;
-}
+  text-align: left;
+  margin-top: 80px;
+  }
 
 
   
@@ -198,14 +199,9 @@ body {
   .about-right img {
     width: 100%;
     height: 100%;
+    clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
     object-fit: cover;
     display: block;
-  }
-
-  
-  .about-text {
-    text-align: left;
-    margin-top: 80px;
   }
 
   .page-title {
