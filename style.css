@@ -135,8 +135,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
 }
+
 
 
 .logo-page {
@@ -148,18 +148,18 @@ body {
 .about-left {
   flex: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 1rem;
-  margin-top: 1rem;
 }
+
 
   
 .about-text {
-  text-align: center;
   margin-top: 1rem;
 }
+
 
   
   .about-text h1 {
