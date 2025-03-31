@@ -197,7 +197,7 @@ body {
   
   
   .about-right img {
-    width: 105%;
+    width: 110%;
     height: 100%;
     clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
     object-fit: cover;
