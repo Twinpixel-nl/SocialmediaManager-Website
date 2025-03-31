@@ -117,36 +117,32 @@ body {
   .about-hero {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #f8f8f8;
-    padding: 2rem 3rem;
-    position: relative;
+    padding: 0 3rem;
+    padding-bottom: 6rem;
+    position: relative; /* Ensure relative positioning for child elements */
     overflow: hidden;
     gap: 2rem;
-    flex-wrap: nowrap;
-    max-width: 1100px;
-    margin: 0 auto;
-    transform: scale(0.9);
-    transform-origin: top center;
-    border-radius: 1rem;
-  }
+    flex-wrap: wrap;
+}
 
-  .logo-subpage {
-    position: relative;
-    height: 360px;
+.logo-subpage {
+    position: absolute;
+    height: 400px;
     width: auto;
+    left: 20px; /* Positioned closer to the left */
+    top: 90px; /* Positioned closer to the top */
     z-index: 2;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    object-fit: contain;
+    opacity: 1; /* Ensure full visibility */
+}
 
-  .logo-page {
-    max-height: 100%;
-    width: auto;
-    display: block;
-  }
+.logo-page {
+    height: 100%; /* Inherit the height from the parent */
+    width: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure proper rendering */
+}
   
   .about-left {
     flex: 1;
@@ -201,4 +197,3 @@ body {
     margin: 2rem 0 1rem 0;
     color: white;
   }
-  
