@@ -814,119 +814,6 @@ header {
       color: #2a2a2a;
     }
 
-    .team-section {
-      background-color: #0f172a;
-      color: white;
-      padding: 5rem 2rem;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .team-section::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 300px;
-      height: 300px;
-      background: radial-gradient(circle, rgba(252, 217, 196, 0.1), transparent 70%);
-      z-index: 0;
-    }
-
-    .team-container {
-      max-width: 1000px;
-      margin: 0 auto;
-      position: relative;
-      z-index: 1;
-    }
-
-    .team-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
-      margin-bottom: 1.5rem;
-      color: #fcd9c4;
-      text-align: center;
-      opacity: 0;
-      animation: fadeIn 1s ease-out forwards;
-    }
-
-    .team-intro {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      max-width: 800px;
-      margin: 0 auto 3rem;
-      text-align: center;
-      opacity: 0;
-      animation: fadeIn 1s ease-out forwards;
-      animation-delay: 0.2s;
-    }
-
-    .team-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2.5rem;
-    }
-
-    .team-member {
-      background-color: rgba(19, 28, 53, 0.8);
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-      border: 1px solid rgba(192, 132, 252, 0.1);
-      transition: all 0.4s ease;
-      opacity: 0;
-      animation: fadeIn 1s ease-out forwards;
-      animation-delay: calc(0.2s * var(--i, 1));
-    }
-
-    .team-member:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-      border-color: rgba(192, 132, 252, 0.3);
-    }
-
-    .team-member-image {
-      width: 100%;
-      height: 250px;
-      overflow: hidden;
-    }
-
-    .team-member-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.5s ease;
-    }
-
-    .team-member:hover .team-member-image img {
-      transform: scale(1.05);
-    }
-
-    .team-member-info {
-      padding: 1.5rem;
-      text-align: center;
-    }
-
-    .team-member-name {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.4rem;
-      margin-bottom: 0.5rem;
-      color: #fcd9c4;
-    }
-
-    .team-member-role {
-      font-size: 1rem;
-      color: #c084fc;
-      margin-bottom: 1rem;
-      font-style: italic;
-    }
-
-    .team-member-bio {
-      font-size: 0.95rem;
-      line-height: 1.6;
-      color: #e0e0e0;
-    }
-
     /* Animated Werkwijze Section */
     @keyframes floatNumber {
       0% { transform: translateY(0) rotate(0deg); }
@@ -1046,7 +933,7 @@ header {
 
     .step-number {
       background: linear-gradient(135deg, #0f172a 0%, #131c35 100%);
-      color: #fcd9c4;
+      color: white;
       width: 60px;
       height: 60px;
       border-radius: 50%;
