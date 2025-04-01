@@ -1308,8 +1308,6 @@ header {
   text-align: left;
   margin-top: 80px;
   }
-
-
   
   .about-text h1 {
     font-family: 'Playfair Display', serif;
@@ -1339,7 +1337,7 @@ header {
   
   
   .about-right img {
-    width: 108%;
+    width: 115%;
     height: 100%;
     clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
     object-fit: cover;
