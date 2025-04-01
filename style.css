@@ -552,7 +552,7 @@ header {
 
 .hero-logo {
   position: absolute;
-  bottom: 15%;
+  bottom: 8%;
   right: 25px;
   z-index: 2;
   animation: float 4s ease-in-out infinite;
@@ -654,6 +654,8 @@ header {
   opacity: 0;
   animation: slideInLeft 0.8s ease-out forwards;
   animation-delay: 0.2s;
+  color: #0f172a;
+
 }
 
 .about-text h2 {
@@ -1512,10 +1514,15 @@ footer a:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   font-size: 30px;
   transition: transform 0.3s ease;
+  line-height: 0; 
 }
 
 .whatsapp-float:hover {
   transform: scale(1.05);
+}
+
+.whatsapp-float i {
+  text-decoration: none;
 }
 
 /* Portfolio Preview Section Styles */
