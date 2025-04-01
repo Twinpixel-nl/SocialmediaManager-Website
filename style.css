@@ -641,6 +641,11 @@ footer {
   color: #e0e0e0;
 }
 
+.footer-contact a{
+  color: e0e0e0;
+  text-decoration: none;
+}
+
 .footer-social .social-icons {
   display: flex;
   gap: 1rem;
