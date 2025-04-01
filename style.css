@@ -345,6 +345,7 @@ body {
   font-family: 'Anonymous Pro', monospace;
   background-color: #0f172a;
   color: white;
+  padding-top: 70px; /* Add padding to account for the fixed navbar */
 }
 
 h1, h2, h3 {
@@ -380,7 +381,7 @@ h1, h2, h3 {
 }
 
 .navbar {
-  position: sticky;
+  position: fixed;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
@@ -388,9 +389,12 @@ h1, h2, h3 {
   padding: 1rem 2rem;
   background: rgba(15, 23, 42, 0.95);
   top: 0;
+  left: 0;
+  right: 0;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
+  width: 100%;
 }
 
 .nav-links {
