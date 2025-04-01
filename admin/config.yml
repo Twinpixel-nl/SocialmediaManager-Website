@@ -6,6 +6,8 @@ backend:
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
+site_url: https://ssocialmediamanager.netlify.app/
+
 collections:
   - name: "blog"
     label: "Blog"
