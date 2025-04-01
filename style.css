@@ -1361,26 +1361,30 @@ footer {
   padding: 3rem 2rem 2rem;
   margin-top: 2rem;
 }
+/* Icon wrapper styling */
 .social-icons .ab {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background-color: #0f172a;
+  background-color: rgba(255, 255, 255, 0.05);
   color: white;
-  text-decoration: none;
+  font-size: 20px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
+/* Hover effect */
 .social-icons .ab:hover {
   background-color: #c084fc;
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 
 footer a {
   color: white;
