@@ -1,12 +1,10 @@
 {
-    "name": "netlify-blog-plugin",
-    "version": "1.0.0",
-    "description": "Netlify plugin om blog-index.json te genereren",
-    "scripts": {
-      "build": "node netlify/generate-blog-index.js"
-    },
-    "dependencies": {
-      "gray-matter": "^4.0.3"
-    }
+  "name": "socialmediamanager",
+  "version": "1.0.0",
+  "scripts": {
+    "prebuild": "node netlify/generate-blog-index.js"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3"
   }
-  
+}
