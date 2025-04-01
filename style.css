@@ -380,14 +380,14 @@ h1, h2, h3 {
 }
 
 .navbar {
+  position: sticky;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   background: rgba(15, 23, 42, 0.95);
-  position: sticky;
   top: 0;
-  z-index: 1000;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
@@ -493,10 +493,14 @@ h1, h2, h3 {
   background-color: #ffcdb2;
 }
 
+header {
+  overflow: visible; /* of verwijder overflow helemaal */
+}
+
 .hero {
   position: relative;
   text-align: left;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero-image {
