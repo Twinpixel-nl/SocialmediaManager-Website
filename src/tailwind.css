@@ -1,0 +1,7 @@
+/* Ensure Tailwind CSS directives are processed */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import your existing CSS */
+@import "./base.css";
