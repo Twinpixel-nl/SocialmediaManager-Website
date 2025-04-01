@@ -54,20 +54,6 @@
         
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--         
         
         Blog Post 4
@@ -172,49 +158,44 @@
     });
   </script>
 
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/front-matter@4.0.2/dist/front-matter.min.js"></script>
 
-<script>
-  const blogContainer = document.querySelector('.blog-container');
-  
-  // Vaste lijst met blogpost-bestanden (je zou dit kunnen automatiseren via JSON of directory listing, maar dit is de snelste manier zonder backend)
-  const blogPosts = [
-    'content/blog/2025-04-01-welkom.md',
-    // voeg hier nieuwe posts toe
-  ];
-  
-  async function loadPosts() {
-    for (const path of blogPosts) {
-      try {
-        const res = await fetch(path);
-        const raw = await res.text();
-        const parsed = frontMatter(raw);
-        const html = marked.parse(parsed.body);
-  
-        const data = parsed.attributes;
-  
-        const post = document.createElement('article');
-        post.classList.add('blog-post', 'reveal');
-        post.innerHTML = `
-          <div class="blog-image">
-            <img src="${data.thumbnail || 'Images/Julian business meeting.jpg'}" alt="${data.title}" />
-          </div>
-          <div class="blog-content">
-            <span class="blog-date">${new Date(data.date).toLocaleDateString('nl-NL')}</span>
-            <h3>${data.title}</h3>
-            <p class="blog-excerpt">${data.excerpt || html.slice(0, 200)}...</p>
-            <a href="BlogPost.html?file=${encodeURIComponent(path)}" class="btn orange-btn">Lees meer</a>
-          </div>
-        `;
-        blogContainer.appendChild(post);
-      } catch (e) {
-        console.error('Fout bij laden post:', path, e);
-      }
-    }
-  }
-  
-  loadPosts();
+  <!-- Blog posts inladen vanaf blog-index.json -->
+  <script>
+    fetch('blog-index.json')
+      .then(response => response.json())
+      .then(posts => {
+        const container = document.querySelector('.blog-container');
+
+        posts.forEach((post, index) => {
+          const article = document.createElement('article');
+          article.className = 'blog-post reveal';
+          article.setAttribute('data-id', `post-${index + 1}`);
+
+          article.innerHTML = `
+            <div class="blog-image">
+              <img src="${post.thumbnail}" alt="${post.title}" data-thumbnail />
+            </div>
+            <div class="blog-content">
+              <span class="blog-date" data-date>${new Date(post.date).toLocaleDateString('nl-NL', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+              })}</span>
+              <h3 data-title>${post.title}</h3>
+              <p class="blog-excerpt" data-excerpt>${post.excerpt}</p>
+              <a href="BlogPost.html?id=post-${index + 1}" class="btn orange-btn">Lees meer</a>
+            </div>
+          `;
+
+          container.appendChild(article);
+        });
+
+        revealOnScroll(); // activeer animatie op nieuwe posts
+      })
+      .catch(error => {
+        console.error('❌ Fout bij laden van blog-index.json:', error);
+      });
   </script>
+
 </body>
 </html>
