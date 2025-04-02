@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Lees de laatste inzichten en tips over social media marketing, content strategie en online zichtbaarheid op het Social Media Manager blog.">
-  <title>Blog - Social Media Manager</title>
+  <meta name="description" content="{{excerpt}}">
+  <title>{{title}} - Social Media Manager</title>
+
+  <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="src/style.css" />
+  <link rel="stylesheet" href="/src/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  
+
   <!-- Favicon / Webicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
@@ -17,120 +19,72 @@
   <link rel="shortcut icon" href="/images/favicon_io/favicon.ico" type="image/x-icon">
   <meta name="theme-color" content="#0f172a">
   <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
 <body>
 
   <header>
     <nav class="navbar">
       <div class="logo">
-        <a href="Index.html"><img src="Images/Logo_los_transparant.png" alt="Social Media Manager logo" class="nav-logo"/></a>
+        <a href="/Index.html"><img src="/Images/Logo_los_transparant.png" alt="Social Media Manager logo" class="nav-logo"/></a>
       </div>
       <ul class="nav-links">
-        <li><a href="Index.html">Home</a></li>
-        <li><a href="About.html">Over ons</a></li>
-        <li><a href="Diensten.html">Diensten</a></li>
-        <li><a href="Portfolio.html">Portfolio</a></li>
-        <li><a href="Blog.html">Blog</a></li>
+        <li><a href="/Index.html">Home</a></li>
+        <li><a href="/About.html">Over ons</a></li>
+        <li><a href="/Diensten.html">Diensten</a></li>
+        <li><a href="/Portfolio.html">Portfolio</a></li>
+        <li><a href="/Blog.html">Blog</a></li>
       </ul>
-      <a href="Contact.html" class="btn contact-btn">Contact</a>
+      <a href="/Contact.html" class="btn contact-btn">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <h1 class="page-title">Blog</h1>
-
-    <section class="promo-section">
-      <h2 class="reveal">Inzichten & Expertise</h2>
-      <p class="reveal">
-        Ontdek de laatste trends, tips en strategieën op het gebied van social media marketing.
-        Onze experts delen hun kennis om jouw online aanwezigheid naar een hoger niveau te tillen.
-      </p>
-    </section>
-
-    <!-- Blog Posts Grid -->
-    <section class="blog-section">
-      <div class="blog-container">
-        
-
-
-<!--         
-        
-        Blog Post 4
-        <article class="blog-post reveal" data-id="post-4">
-          <div class="blog-image">
-            <img src="Images/Overons.jpg" alt="Video content" data-thumbnail />
-          </div>
-          <div class="blog-content">
-            <span class="blog-date" data-date>3 februari 2025</span>
-            <h3 data-title>Video content: de sleutel tot meer engagement</h3>
-            <p class="blog-excerpt" data-excerpt>
-              Video blijft de meest effectieve content vorm op social media. Leer hoe je met beperkte middelen toch professionele en aansprekende video content kunt creëren die resoneert met jouw doelgroep.
-            </p>
-            <a href="BlogPost.html?id=post-4" class="btn orange-btn">Lees meer</a>
-          </div>
-        </article>
-         -->
+  <main class="blog-post-detail">
+    <div class="container">
+      <h1 class="page-title">{{title}}</h1>
+      <p class="blog-date">{{date}}</p>
+      <div class="blog-body">
+        {{content}}
       </div>
-    </section>
-
-    <section class="promo-section">
-      <h2>Blijf op de hoogte</h2>
-      <p>
-        Wil je als eerste onze nieuwste inzichten en tips ontvangen? 
-        Neem contact met ons op voor een vrijblijvend gesprek over hoe wij jouw social media strategie kunnen versterken.
-      </p>
-      <a href="Contact.html" class="btn purple-btn">Plan een kennismaking in</a>
-    </section>
+      <a href="/Blog.html" class="btn purple-btn mt-6">← Terug naar blogoverzicht</a>
+    </div>
   </main>
 
   <footer>
     <div class="footer-container">
       <div class="footer-logo">
-        <img src="Images/Logo_volledig_wit.png" alt="Social Media Manager logo" />
+        <img src="/Images/Logo_volledig_wit.png" alt="Social Media Manager logo" />
       </div>
-      
       <div class="footer-links">
         <h3>Navigatie</h3>
         <ul>
-          <li><a href="Index.html">Home</a></li>
-          <li><a href="About.html">Over ons</a></li>
-          <li><a href="Diensten.html">Diensten</a></li>
-          <li><a href="Portfolio.html">Portfolio</a></li>
-          <li><a href="Blog.html">Blog</a></li>
-          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="/Index.html">Home</a></li>
+          <li><a href="/About.html">Over ons</a></li>
+          <li><a href="/Diensten.html">Diensten</a></li>
+          <li><a href="/Portfolio.html">Portfolio</a></li>
+          <li><a href="/Blog.html">Blog</a></li>
+          <li><a href="/Contact.html">Contact</a></li>
         </ul>
       </div>
-      
       <div class="footer-contact">
         <h3>Contact</h3>
-        <p>
-          <a href="tel:+31629812928">
-            <i class="fas fa-phone"></i> Telefoon: +31 629 812 928
-          </a>
-        </p>
-        <p>
-          <a href="https://maps.app.goo.gl/9tiDGBhQmoLtqPJu5" target="_blank">
-            <i class="fas fa-map-marker-alt"></i> Dorpsplein 1, 6733 AV Wekerom
-          </a>
-        </p>
+        <p><a href="tel:+31629812928"><i class="fas fa-phone"></i> +31 629 812 928</a></p>
+        <p><a href="https://maps.app.goo.gl/9tiDGBhQmoLtqPJu5" target="_blank"><i class="fas fa-map-marker-alt"></i> Dorpsplein 1, 6733 AV Wekerom</a></p>
       </div>
-      
-      
       <div class="footer-social">
         <h3>Volg ons</h3>
         <div class="social-icons">
-          <a href="https://www.instagram.com/rocket.network.agency/" aria-label="Instagram" target="_blank"><i class="ab fab fa-instagram fa-sm"></i></a>
-          <a href="https://www.linkedin.com/in/julian-van-beek-35276b241/" aria-label="LinkedIn" target="_blank"><i class="ab fab fa-linkedin-in fa-sm"></i></a>
-          <a href="https://wa.me/31629812928?text=Hallo%20ik%20heb%20interesse%20in%20jullie%20social%20media%20dienst" aria-label="Whatsapp"><i class="ab fab fa-whatsapp fa-sm" target="_blank"></i></a>
+          <a href="https://www.instagram.com/rocket.network.agency/" target="_blank"><i class="ab fab fa-instagram fa-sm"></i></a>
+          <a href="https://www.linkedin.com/in/julian-van-beek-35276b241/" target="_blank"><i class="ab fab fa-linkedin-in fa-sm"></i></a>
+          <a href="https://wa.me/31629812928?text=Hallo%20ik%20heb%20interesse%20in%20jullie%20social%20media%20dienst" target="_blank"><i class="ab fab fa-whatsapp fa-sm"></i></a>
         </div>
       </div>
     </div>
-    
     <div class="footer-bottom">
       <p>&copy; 2025 socialmediamanager.nl | <a href="https://twinpixel.nl/">Made with ❤️ by TwinPixel</a></p>
     </div>
   </footer>
+
+
 
   
   <!-- Animation Script -->
@@ -165,12 +119,12 @@
       .then(response => response.json())
       .then(posts => {
         const container = document.querySelector('.blog-container');
-
+  
         posts.forEach((post, index) => {
           const article = document.createElement('article');
           article.className = 'blog-post reveal';
           article.setAttribute('data-id', `post-${index + 1}`);
-
+  
           article.innerHTML = `
             <div class="blog-image">
               <img src="${post.thumbnail}" alt="${post.title}" data-thumbnail />
@@ -183,19 +137,20 @@
               })}</span>
               <h3 data-title>${post.title}</h3>
               <p class="blog-excerpt" data-excerpt>${post.excerpt}</p>
-              <a href="BlogPost.html?id=post-${index + 1}" class="btn orange-btn">Lees meer</a>
+              <a href="${post.path}" class="btn orange-btn">Lees meer</a>
             </div>
           `;
-
+  
           container.appendChild(article);
         });
-
+  
         revealOnScroll(); // activeer animatie op nieuwe posts
       })
       .catch(error => {
         console.error('❌ Fout bij laden van blog-index.json:', error);
       });
   </script>
+  
 
 </body>
 </html>
