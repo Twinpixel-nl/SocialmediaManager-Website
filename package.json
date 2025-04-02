@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "Website voor socialmediamanager.nl met blogfunctionaliteit",
 
-  "scripts": {
-  "build": "node netlify/wait.js && node netlify/generate-blog.js && npx tailwindcss -i ./src/tailwind.css -o ./style.css",
-  "generate": "node netlify/generate-blog.js",
+"scripts": {
+  "generate": "node netlify/generate-blog.js && node netlify/generate-sitemap.js",
+  "build": "node netlify/wait.js && node netlify/generate-blog.js && node netlify/generate-sitemap.js && npx tailwindcss -i ./src/tailwind.css -o ./style.css",
   "dev": "npx tailwindcss -i ./src/tailwind.css -o ./style.css --watch"
 },
+
 
   "dependencies": {
     "glob": "^11.0.1",

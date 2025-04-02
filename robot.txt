@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /images/
+Disallow: /assets/
+Disallow: /private/
+
+# Allow all content in the blog
+Allow: /blog/
+
+# Allow the CSS and JS files to be crawled
+Allow: /src/style.css
+Allow: /src/js/
+
+Sitemap: https://socialmediamanager.netlify.app/sitemap.xml

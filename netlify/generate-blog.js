@@ -29,6 +29,28 @@ files.forEach(file => {
 
   const htmlContent = marked.parse(content);
 
+  // Structured Data voor SEO (JSON-LD)
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": data.title || "",
+    "image": data.thumbnail || "",
+    "datePublished": data.date || "",
+    "author": {
+      "@type": "Organization",
+      "name": "Social Media Manager"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Social Media Manager",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "/Images/Logo_volledig_wit.png"
+      }
+    },
+    "description": data.excerpt || ""
+  };
+
   const html = `
 <!DOCTYPE html>
 <html lang="nl">
