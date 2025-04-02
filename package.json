@@ -2,12 +2,12 @@
   "name": "socialmediamanager",
   "version": "1.0.0",
   "description": "Website voor socialmediamanager.nl met blogfunctionaliteit",
-  "scripts": {
-    "prebuild": "node netlify/wait.js && node netlify/generate-blog.js",
-    "build": "tailwindcss -i ./src/tailwind.css -o ./style.css",
-    "generate": "node netlify/generate-blog.js",
-    "dev": "tailwindcss -i ./src/tailwind.css -o ./style.css --watch"
-  },
+"scripts": {
+  "build": "node netlify/wait.js && node netlify/generate-blog.js && tailwindcss -i ./src/tailwind.css -o ./style.css",
+  "generate": "node netlify/generate-blog.js",
+  "dev": "tailwindcss -i ./src/tailwind.css -o ./style.css --watch"
+}
+,
   "dependencies": {
     "glob": "^11.0.1",
     "gray-matter": "^4.0.3",
