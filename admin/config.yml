@@ -1,13 +1,3 @@
-backend:
-  name: git-gateway
-  repo: Twinpixel-nl/SocialmediaManager-Website
-  branch: main
-
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
-
-site_url: https://ssocialmediamanager.netlify.app/
-
 collections:
   - name: "blog"
     label: "Blog"
@@ -17,4 +7,16 @@ collections:
     fields:
       - { label: "Titel", name: "title", widget: "string" }
       - { label: "Publicatiedatum", name: "date", widget: "datetime" }
+      - {
+          label: "Thumbnail",
+          name: "thumbnail",
+          widget: "image",
+          required: false,
+        }
+      - {
+          label: "Uitsnede",
+          name: "excerpt",
+          widget: "string",
+          required: false,
+        }
       - { label: "Inhoud", name: "body", widget: "markdown" }
