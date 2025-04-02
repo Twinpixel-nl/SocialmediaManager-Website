@@ -4,13 +4,20 @@
     "date": "2025-04-01",
     "excerpt": "De eerste blog op socialmediamanager.nl",
     "thumbnail": "Images/Overons.jpg",
-    "path": "content/blog/2025-04-01-huilen.md"
+    "path": "/blog/2025-04-01-huilen.html"
+  },
+  {
+    "title": "kaas",
+    "date": "2025-04-01T18:34:28.879Z",
+    "excerpt": "",
+    "thumbnail": "",
+    "path": "/blog/2025-04-01-kaas.html"
   },
   {
     "title": "Welkom bij de blog",
     "date": "2025-04-01",
     "excerpt": "De eerste blog op socialmediamanager.nl",
     "thumbnail": "Images/Overons.jpg",
-    "path": "content/blog/2025-04-01-welkom.md"
+    "path": "/blog/2025-04-01-welkom.html"
   }
 ]
