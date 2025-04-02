@@ -50,6 +50,7 @@
   </head>
   
 <body>
+  <div id="scroll-progress"></div>
 
   <header>
     <nav class="navbar">
@@ -223,5 +224,22 @@
       <p>&copy; 2025 socialmediamanager.nl | <a href="https://twinpixel.nl/">Made with ❤️ by TwinPixel</a></p>
     </div>
   </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const scrollProgress = document.getElementById('scroll-progress');
+      const scrollTop = window.scrollY;
+      const docHeight = document.body.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      scrollProgress.style.width = scrollPercent + '%';
+    });
+  </script>
+  
+  <a href="https://wa.me/31629812928?text=Hallo%20ik%20heb%20interesse%20in%20jullie%20social%20media%20dienst" 
+  class="whatsapp-float" 
+  target="_blank" 
+  aria-label="Chat met ons op WhatsApp">
+  <i class="ab fab fa-whatsapp"></i>
+  </a>
 </body>
 </html>
