@@ -38,7 +38,7 @@ files.forEach(file => {
     <meta name="description" content="${data.excerpt || ""}">
     <title>${data.title} - Social Media Manager</title>
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css" />
+<link rel="stylesheet" href="/src/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
