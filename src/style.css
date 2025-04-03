@@ -1260,19 +1260,32 @@ header {
   }
 }
 
-
-
-  .about-hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f8f8f8;
-    padding: 0 3rem;
-    position: relative; /* Ensure relative positioning for child elements */
-    overflow: hidden;
-    gap: 2rem;
-    flex-wrap: wrap;
+.about-hero {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap;
 }
+
+
+.about-right {
+  flex: 1;
+  background-color: white;
+  overflow: hidden;
+}
+
+
+.about-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+  display: block;
+}
+
 
 .logo-subpage {
   position: relative;
@@ -1287,19 +1300,23 @@ header {
 
 
 .logo-page {
-    height: 100%; /* Inherit the height from the parent */
-    width: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure proper rendering */
+  height: 100%; /* Inherit the height from the parent */
+  width: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure proper rendering */
 }
   
 .about-left {
   flex: 1;
+  background-color: #fff;
+  clip-path: none;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 1rem;
+  justify-content: center;
+  gap: -2rem;
+  min-height: 100%;
 }
+
 
 
   
@@ -1329,23 +1346,8 @@ header {
     margin-top: 0.5rem;
     color: #2a2a2a;
   }
-  
-  .about-right {
-    flex: 1;
-    min-height: 100%;
-  }
-  
-  
-  .about-right img {
-    width: 115%;
-    height: 100%;
-    clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
-    object-fit: cover;
-    display: block;
-  }
 
-  
-  .page-title {
+    .page-title {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
     font-weight: bold;
