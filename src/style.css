@@ -618,6 +618,51 @@ header {
   animation: fadeIn 0.8s ease-out forwards;
   animation-delay: 0.4s;
 }
+.promo-section h3 {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #e0e0e0;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 2rem auto 0;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-column h3 {
+  font-size: 1.2rem;
+  color: #fcd9c4;
+  margin-bottom: 0.5rem;
+}
+
+.contact-column a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: block;
+  line-height: 1.6;
+}
+
+.contact-column a:hover {
+  text-decoration: underline;
+}
 
 .about-preview {
   background-color: #ffffff;
