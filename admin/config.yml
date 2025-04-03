@@ -22,9 +22,10 @@ collections:
           name: "thumbnail",
           widget: "image",
           required: false,
+          hint: "Gebruik een liggende afbeelding (minimaal 1200x675px voor beste resultaat)"
         }
       - {
-          label: "Uitsnede",
+          label: "ondertiteling",
           name: "excerpt",
           widget: "string",
           required: false,
