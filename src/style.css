@@ -9,6 +9,32 @@ html, body {
 .portfolio-section {
   padding: 2rem 2rem 4rem;
   background-color: #0f172a;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(192, 132, 252, 0.1), transparent 70%);
+  z-index: 0;
+  animation: pulse 8s ease-in-out infinite;
+}
+
+.portfolio-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(252, 217, 196, 0.1), transparent 70%);
+  z-index: 0;
+  animation: pulse 8s ease-in-out infinite reverse;
 }
 
 /* Blog Page Styles */
@@ -232,6 +258,8 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  position: relative;
+  z-index: 1;
 }
 
 .portfolio-item {
@@ -243,12 +271,27 @@ html, body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(192, 132, 252, 0.1);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: calc(0.2s * var(--i, 1));
 }
 
-.portfolio-item:hover {
+.portfolio-item:hover,
+.portfolio-item.hovered {
   transform: translateY(-10px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
   border-color: rgba(192, 132, 252, 0.3);
+}
+
+.portfolio-item.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.portfolio-item.video-playing {
+  border-color: rgba(192, 132, 252, 0.6);
+  box-shadow: 0 15px 40px rgba(192, 132, 252, 0.2);
 }
 
 .portfolio-image {
@@ -273,16 +316,22 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  animation: glow 3s ease-in-out infinite;
 }
 
 .mute-toggle:hover {
   transform: scale(1.1);
+  background-color: rgba(192, 132, 252, 0.8);
 }
 
+.mute-toggle.clicked {
+  transform: scale(0.9);
+  background-color: rgba(252, 217, 196, 0.8);
+}
 
-.mute-toggle:hover {
-  transform: translate(-50%, -50%) scale(1.1);
+.mute-toggle.pulse-animation {
+  animation: pulse 2s infinite;
 }
 
 
@@ -315,6 +364,9 @@ html, body {
   color: #fcd9c4;
   margin-top: 0;
   margin-bottom: 1rem;
+  opacity: 0;
+  animation: fadeInRight 0.6s ease-out forwards;
+  animation-delay: 0.3s;
 }
 
 .portfolio-description {
@@ -322,6 +374,9 @@ html, body {
   line-height: 1.6;
   color: #e0e0e0;
   margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: fadeInRight 0.6s ease-out forwards;
+  animation-delay: 0.5s;
 }
 
 .portfolio-results {
@@ -329,6 +384,27 @@ html, body {
   padding: 1.5rem;
   border-radius: 8px;
   border-left: 4px solid #c084fc;
+  opacity: 0;
+  animation: fadeInRight 0.6s ease-out forwards;
+  animation-delay: 0.7s;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-results::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(192, 132, 252, 0.2), 
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite linear;
 }
 
 .portfolio-results h4 {
@@ -415,6 +491,42 @@ h1, h2, h3 {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0px); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -100% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes rotateIn {
+  from { opacity: 0; transform: rotate(-15deg) scale(0.9); }
+  to { opacity: 1; transform: rotate(0) scale(1); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 5px rgba(192, 132, 252, 0.5); }
+  50% { box-shadow: 0 0 20px rgba(192, 132, 252, 0.8); }
+  100% { box-shadow: 0 0 5px rgba(192, 132, 252, 0.5); }
 }
 
 .navbar {

@@ -98,7 +98,7 @@
       <div class="portfolio-container">
         
         <!-- Portfolio Item 1 -->
-        <div class="portfolio-item horizontal">
+        <div class="portfolio-item horizontal" style="--i: 1;">
           <div class="portfolio-image">
             <video id="video1" class="portfolio-video" muted loop playsinline>
               <source src="videos/videoplayback.mp4" type="video/mp4">
@@ -127,7 +127,7 @@
           </div>
         </div>
         <!-- Portfolio Item 2 -->
-        <div class="portfolio-item horizontal">
+        <div class="portfolio-item horizontal" style="--i: 2;">
           <div class="portfolio-image">
             <video id="video1" class="portfolio-video" muted loop playsinline>
               <source src="videos/Video Project 2.mp4" type="video/mp4">
@@ -156,7 +156,7 @@
           </div>
         </div>
        <!--Portfolio item 3-->
-        <div class="portfolio-item horizontal">
+        <div class="portfolio-item horizontal" style="--i: 3;">
           <div class="portfolio-image">
             <video id="video1" class="portfolio-video" muted loop playsinline>
               <source src="videos/Hoge Veluwe Vergaderzalen.mp4" type="video/mp4">
@@ -185,7 +185,7 @@
           </div>
         </div>
         <!--Portfolio item 4-->
-        <div class="portfolio-item horizontal">
+        <div class="portfolio-item horizontal" style="--i: 4;">
           <div class="portfolio-image">
             <video id="video1" class="portfolio-video" muted loop playsinline>
               <source src="videos/InbouwNederland Audio Porsche.mp4" type="video/mp4">
@@ -214,7 +214,7 @@
           </div>
         </div>
         <!--Portfolio item 5-->
-        <div class="portfolio-item horizontal">
+        <div class="portfolio-item horizontal" style="--i: 5;">
           <div class="portfolio-image">
             <video id="video1" class="portfolio-video" muted loop playsinline>
               <source src="videos/Ad Seduce Kerst 1.mp4" type="video/mp4">
@@ -341,33 +341,81 @@
     });
   </script>
 <script>
-  document.querySelectorAll('.portfolio-item').forEach(item => {
+  // Fix duplicate IDs by assigning unique IDs to videos and buttons
+  document.querySelectorAll('.portfolio-item').forEach((item, index) => {
     const video = item.querySelector('video');
     const muteButton = item.querySelector('.mute-toggle');
-
-    muteButton.addEventListener('click', () => {
-      if (!video) return;
-      video.muted = !video.muted;
-      muteButton.textContent = video.muted ? "🔇" : "🔊";
-    });
-  });
-</script>
-
-<script>
-  document.querySelectorAll('.portfolio-item').forEach(item => {
-    const video = item.querySelector('video');
     
+    if (video) {
+      // Assign unique ID to each video
+      video.id = `video-${index + 1}`;
+      
+      // Add animation effect when video is playing
+      video.addEventListener('play', () => {
+        item.classList.add('video-playing');
+      });
+      
+      video.addEventListener('pause', () => {
+        item.classList.remove('video-playing');
+      });
+    }
+
+    if (muteButton) {
+      // Assign unique ID to each mute button
+      muteButton.id = `mute-button-${index + 1}`;
+      
+      // Add pulse animation to mute button
+      muteButton.classList.add('pulse-animation');
+      
+      muteButton.addEventListener('click', (e) => {
+        e.stopPropagation(); // Prevent triggering parent click events
+        if (!video) return;
+        
+        video.muted = !video.muted;
+        muteButton.textContent = video.muted ? "🔇" : "🔊";
+        
+        // Add a visual feedback effect
+        muteButton.classList.add('clicked');
+        setTimeout(() => {
+          muteButton.classList.remove('clicked');
+        }, 300);
+      });
+    }
+    
+    // Enhanced hover interaction
     item.addEventListener('mouseenter', () => {
-      if (video) video.play();
+      if (video) {
+        video.play();
+        item.classList.add('hovered');
+      }
     });
 
     item.addEventListener('mouseleave', () => {
       if (video) {
         video.pause();
         video.currentTime = 0; // reset naar begin
+        item.classList.remove('hovered');
       }
     });
   });
+  
+  // Add animation to portfolio items on scroll
+  function animateOnScroll() {
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    
+    portfolioItems.forEach(item => {
+      const position = item.getBoundingClientRect();
+      
+      // If the item is in the viewport
+      if (position.top < window.innerHeight * 0.9 && position.bottom >= 0) {
+        item.classList.add('in-view');
+      }
+    });
+  }
+  
+  // Run on scroll and on page load
+  window.addEventListener('scroll', animateOnScroll);
+  window.addEventListener('load', animateOnScroll);
 </script>
 
 
