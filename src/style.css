@@ -770,20 +770,33 @@ h1, h2, h3 {
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+.purple-btn,
+.orange-btn {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
 
+/* Paarse button */
 .purple-btn {
   background-color: #c084fc;
   color: white;
   margin-top: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .purple-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   background-color: #a855f7;
 }
 
+/* Oranje button */
 .orange-btn {
   background-color: #fcd9c4;
   color: #0f172a;
@@ -791,10 +804,22 @@ h1, h2, h3 {
 }
 
 .orange-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
   background-color: #ffcdb2;
 }
+
+/* 📱 Mobiele optimalisatie */
+@media (max-width: 640px) {
+  .purple-btn,
+  .orange-btn {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 1rem;
+    margin-top: 1.2rem;
+  }
+}
+
 
 header {
   overflow: visible; /* of verwijder overflow helemaal */
