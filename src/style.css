@@ -853,8 +853,13 @@ header {
   
   /* Ensure buttons are visible and have enough space */
   .hero-content .btn {
-    display: inline-block;
+    display: none; /* Hide button on small screens */
     margin-bottom: 1rem;
+  }
+  
+  /* Hide logo on small screens */
+  .hero-logo {
+    display: none;
   }
 }
 
