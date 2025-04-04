@@ -260,7 +260,10 @@
     // Scroll animation
     function revealOnScroll() {
       const reveals = document.querySelectorAll('.reveal');
+      const features = document.querySelector('.features');
+      const portfolioPreview = document.querySelector('.portfolio-preview');
       
+      // Check for reveal elements
       for (let i = 0; i < reveals.length; i++) {
         const windowHeight = window.innerHeight;
         const elementTop = reveals[i].getBoundingClientRect().top;
@@ -268,6 +271,22 @@
         
         if (elementTop < windowHeight - elementVisible) {
           reveals[i].classList.add('active');
+        }
+      }
+      
+      // Check for features section
+      if (features) {
+        const featuresTop = features.getBoundingClientRect().top;
+        if (featuresTop < window.innerHeight - 150) {
+          features.classList.add('active');
+        }
+      }
+      
+      // Check for portfolio preview section
+      if (portfolioPreview) {
+        const portfolioTop = portfolioPreview.getBoundingClientRect().top;
+        if (portfolioTop < window.innerHeight - 150) {
+          portfolioPreview.classList.add('active');
         }
       }
     }
@@ -282,6 +301,13 @@
       const featureItems = document.querySelectorAll('.feature-item');
       featureItems.forEach((item, index) => {
         item.style.animationDelay = `${0.2 * (index + 1)}s`;
+        item.setAttribute('style', `--i:${index + 1}`);
+      });
+      
+      // Add animation delay to portfolio preview items
+      const portfolioItems = document.querySelectorAll('.portfolio-preview-item');
+      portfolioItems.forEach((item, index) => {
+        item.setAttribute('style', `--i:${index + 1}`);
       });
     });
   </script>
