@@ -121,23 +121,7 @@
         
 
 
-<!--         
-        
-        Blog Post 4
-        <article class="blog-post reveal" data-id="post-4">
-          <div class="blog-image">
-            <img src="Images/Overons.jpg" alt="Video content" data-thumbnail />
-          </div>
-          <div class="blog-content">
-            <span class="blog-date" data-date>3 februari 2025</span>
-            <h3 data-title>Video content: de sleutel tot meer engagement</h3>
-            <p class="blog-excerpt" data-excerpt>
-              Video blijft de meest effectieve content vorm op social media. Leer hoe je met beperkte middelen toch professionele en aansprekende video content kunt creëren die resoneert met jouw doelgroep.
-            </p>
-            <a href="BlogPost.html?id=post-4" class="btn orange-btn">Lees meer</a>
-          </div>
-        </article>
-         -->
+
       </div>
     </section>
 
@@ -240,16 +224,18 @@
           article.setAttribute('data-id', `post-${index + 1}`);
   
           article.innerHTML = `
-            <div class="blog-image">
-              <img src="${post.thumbnail}" alt="${post.title}" data-thumbnail />
-            </div>
+          <div class="blog-image">
+           <a href="${post.path}">
+           <img src="${post.thumbnail}" alt="${post.title}" data-thumbnail />
+           </a>
+          </div>
             <div class="blog-content">
               <span class="blog-date" data-date>${new Date(post.date).toLocaleDateString('nl-NL', {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric'
               })}</span>
-              <h3 data-title>${post.title}</h3>
+              <h3 data-title><a href="${post.path}">${post.title}</a></h3>
               <p class="blog-excerpt" data-excerpt>${post.excerpt}</p>
               <a href="${post.path}" class="btn orange-btn">Lees meer</a>
             </div>
