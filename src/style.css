@@ -1838,6 +1838,16 @@ header {
   animation-delay: calc(0.2s * var(--i, 1));
 }
 
+ul li i {
+  margin-right: 10px; /* Ruimte tussen het icoon en de tekst */
+  color: #c084fc; /* Je kunt de kleur aanpassen aan je design */
+}
+
+ul li {
+  font-size: 1.1rem; /* Maak de tekst groter voor een betere zichtbaarheid */
+  line-height: 1.6;
+}
+
 @keyframes featureItemAppear {
   0% {
     opacity: 0;
