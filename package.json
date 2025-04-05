@@ -5,6 +5,7 @@
 
 "scripts": {
   "generate": "node netlify/generate-blog.js && node netlify/generate-sitemap.js",
+  "generate-sitemap": "node netlify/generate-sitemap.js",
   "build": "node netlify/wait.js && node netlify/generate-blog.js && node netlify/generate-sitemap.js && npx tailwindcss -i ./src/tailwind.css -o ./style.css",
   "dev": "npx tailwindcss -i ./src/tailwind.css -o ./style.css --watch"
 },
