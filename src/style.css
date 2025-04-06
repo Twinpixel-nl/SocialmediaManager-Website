@@ -1967,17 +1967,62 @@ ul li {
   width: auto; /* Maintain aspect ratio */
   display: block; /* Ensure proper rendering */
 }
+/* Header van de pagina krijgt de donkere achtergrond */
+header {
+  background-color: #0f172a; /* De donkerblauwe achtergrondkleur van de header */
+}
 
+/* Container voor de video */
 .about-left {
   flex: 1;
-  background-color: #fff;
-  clip-path: none;
+  background-color: #fff; /* Wit voor de video-sectie */
   padding: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: -2rem;
+  align-items: flex-start;
+  gap: 1rem;
   min-height: 100%;
+  overflow: hidden; /* Verbergt alles wat buiten de container uitsteekt */
+}
+
+/* De container voor de video (horizontale video) */
+.video-subpage {
+  position: relative;
+  width: 100%; /* Laat de video de volledige breedte van de sectie gebruiken */
+  height: auto;
+  max-width: 100%;
+  aspect-ratio: 16/9; /* Zorg ervoor dat de video een 16:9 aspect ratio behoudt */
+  overflow: hidden; /* Verbergt alles wat buiten de container uitsteekt */
+  margin-bottom: 1rem; /* Voeg wat ruimte toe tussen de video en de tekst */
+  display: flex;
+  justify-content: center;
+}
+
+/* Video zelf */
+.video-page {
+  width: 100%; /* Zorg ervoor dat de video de volledige breedte benut */
+  height: 100%; /* Zorg ervoor dat de hoogte zich aanpast aan de breedte */
+  object-fit: cover; /* Zorg ervoor dat de video volledig wordt geschaald zonder vervorming */
+  display: block;
+}
+
+/* Styling voor de tekst */
+.about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #0f172a;
+  font-weight: bold;
 }
 
 /* Responsive styling for subpage hero sections */
@@ -1990,6 +2035,9 @@ ul li {
   .about-left {
     order: 2;
     padding: 2.5rem 1.5rem; /* More vertical padding */
+  }
+  .video-subpage {
+    display: none;
   }
 
   .about-right {
