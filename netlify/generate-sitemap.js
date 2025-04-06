@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const baseUrl = "https://socialmediamanager.netlify.app"; // Vervang later door socialmediamanager.nl
+const baseUrl = "https://socialmediamanager.nl"; 
 
 const rootDir = path.resolve(__dirname, "..");
 const blogDir = path.join(rootDir, "blog");

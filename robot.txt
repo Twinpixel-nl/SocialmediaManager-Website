@@ -10,4 +10,4 @@ Allow: /blog/
 Allow: /src/style.css
 Allow: /src/js/
 
-Sitemap: https://socialmediamanager.netlify.app/sitemap.xml
+Sitemap: https://socialmediamanager.nl/sitemap.xml

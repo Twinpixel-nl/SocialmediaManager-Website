@@ -6,7 +6,7 @@ backend:
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
-site_url: https://ssocialmediamanager.netlify.app/
+site_url: https://socialmediamanager.nl/
 
 collections:
   - name: "blog"
@@ -22,7 +22,7 @@ collections:
           name: "thumbnail",
           widget: "image",
           required: false,
-          hint: "Gebruik een liggende afbeelding (minimaal 1200x675px voor beste resultaat)"
+          hint: "Gebruik een liggende afbeelding (minimaal 1200x675px voor beste resultaat)",
         }
       - {
           label: "ondertiteling",
