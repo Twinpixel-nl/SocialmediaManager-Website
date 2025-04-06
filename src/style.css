@@ -1755,6 +1755,14 @@ header {
   opacity: 0;
   animation: fadeIn 0.8s ease-out forwards;
 }
+.features h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem; /* Vergroot de tekst */
+  color: #fcd9c4;
+  margin-bottom: 2rem;
+  font-weight: 600; /* Dikker dan normaal, maar niet te vet zoals h2 */
+  line-height: 1.6; /* Ruimte tussen de regels voor een betere leesbaarheid */
+}
 
 .feature-grid {
   display: grid;
@@ -1986,43 +1994,37 @@ header {
   overflow: hidden; /* Verbergt alles wat buiten de container uitsteekt */
 }
 
-/* De container voor de video (horizontale video) */
+/* De container voor de video */
 .video-subpage {
   position: relative;
-  width: 100%; /* Laat de video de volledige breedte van de sectie gebruiken */
-  height: auto;
-  max-width: 100%;
-  aspect-ratio: 16/9; /* Zorg ervoor dat de video een 16:9 aspect ratio behoudt */
-  overflow: hidden; /* Verbergt alles wat buiten de container uitsteekt */
-  margin-bottom: 1rem; /* Voeg wat ruimte toe tussen de video en de tekst */
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  margin-bottom: 1rem;
   display: flex;
   justify-content: center;
+  background-color: #fff; /* Zorg ervoor dat er geen strepen zijn */
+  border: 10px solid #fff; /* Witte rand rondom de video */
+  border-radius: 15px; /* Optioneel: maak de hoeken van de video afgerond */
+  overflow: hidden; /* Zorg ervoor dat de video netjes binnen de container past */
 }
 
 /* Video zelf */
 .video-page {
-  width: 100%; /* Zorg ervoor dat de video de volledige breedte benut */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 105%; /* Zorg ervoor dat de video de volledige breedte benut */
   height: 100%; /* Zorg ervoor dat de hoogte zich aanpast aan de breedte */
-  object-fit: cover; /* Zorg ervoor dat de video volledig wordt geschaald zonder vervorming */
+  object-fit: cover; /* Zorg ervoor dat de video de container volledig vult zonder vervorming */
   display: block;
 }
 
-/* Styling voor de tekst */
-.about-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.subtitle {
-  font-size: 1.2rem;
-  color: #333;
-}
-
-h2 {
-  font-size: 2rem;
-  color: #0f172a;
-  font-weight: bold;
+/* Verberg de video op kleinere schermen */
+@media screen and (max-width: 768px) {
+  .video-subpage {
+    display: none; /* Verberg de video bij kleinere schermen */
+  }
 }
 
 /* Responsive styling for subpage hero sections */
