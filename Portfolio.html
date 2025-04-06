@@ -94,9 +94,13 @@
     <h1 class="page-title">Portfolio</h1>
     <section class="about-hero">
       <div class="about-left">
-        <div class="logo-subpage">
-          <img src="Images/Logo_volledig_transparant.png" alt="Social Media Manager logo" class="logo-page" />
-        </div>
+        <div class="video-subpage">
+            <!-- Vervang de afbeelding door een video -->
+            <video id="introVideo" class="video-page" muted>
+              <source src="Videos/videolgo.mp4" type="video/mp4" />
+              Je browser ondersteunt geen video.
+            </video>
+          </div>
         <div class="about-text">
           <h2><span>Social media is onze passie.</span></h2>
           <p class="subtitle">Wij helpen bedrijven groeien door strategische zichtbaarheid.</p>
@@ -474,5 +478,20 @@
       });
     });
   </script>
+   <script>
+      // Verkrijg de video
+      const video = document.getElementById("introVideo");
+
+      // Speel de video automatisch af wanneer de pagina wordt geladen
+      window.addEventListener("load", () => {
+        video.play();
+      });
+
+      // Zorg ervoor dat de video stopt op het laatste frame en niet teruggaat naar het begin
+      video.onended = function () {
+        video.pause(); // Zet de video op pauze
+        video.currentTime = video.duration; // Zet de tijd van de video naar het laatste frame
+      };
+    </script>
 </body>
 </html>

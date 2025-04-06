@@ -4,293 +4,379 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog - Social Media Manager</title>
-    <meta name="description" content="Lees de laatste inzichten en tips over social media marketing, content strategie en online zichtbaarheid op het Social Media Manager blog.">
-    <meta name="keywords" content="social media blog, marketing trends, content strategie, online zichtbaarheid, Instagram tips, social media tips" />
-  
+    <meta
+      name="description"
+      content="Lees de laatste inzichten en tips over social media marketing, content strategie en online zichtbaarheid op het Social Media Manager blog."
+    />
+    <meta
+      name="keywords"
+      content="social media blog, marketing trends, content strategie, online zichtbaarheid, Instagram tips, social media tips"
+    />
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://socialmediamanager.nl/Blog.html" />
-  
+
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Blog - Social Media Manager" />
-    <meta property="og:description" content="Lees de laatste inzichten en tips over social media marketing, content strategie en online zichtbaarheid op het Social Media Manager blog." />
+    <meta
+      property="og:description"
+      content="Lees de laatste inzichten en tips over social media marketing, content strategie en online zichtbaarheid op het Social Media Manager blog."
+    />
     <meta property="og:image" content="/images/og-image.jpg" />
     <meta property="og:url" content="https://socialmediamanager.nl/Blog.html" />
     <meta property="og:type" content="website" />
-  
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:title" content="Blog - Social Media Manager" />
-    <meta name="twitter:description" content="Lees de laatste inzichten en tips over social media marketing, content strategie en online zichtbaarheid op het Social Media Manager blog." />
+    <meta
+      name="twitter:description"
+      content="Lees de laatste inzichten en tips over social media marketing, content strategie en online zichtbaarheid op het Social Media Manager blog."
+    />
     <meta name="twitter:image" content="/images/og-image.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
-  
+
     <!-- Structured Data (Schema.org) -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Blog",
-      "name": "Blog - Social Media Manager",
-      "description": "Lees de laatste inzichten en tips over social media marketing, content strategie en online zichtbaarheid op het Social Media Manager blog.",
-      "url": "https://socialmediamanager.nl/Blog.html"
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Blog - Social Media Manager",
+        "description": "Lees de laatste inzichten en tips over social media marketing, content strategie en online zichtbaarheid op het Social Media Manager blog.",
+        "url": "https://socialmediamanager.nl/Blog.html"
+      }
     </script>
-  
+
     <!-- Styling -->
-    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/images/favicon_io/site.webmanifest">
-    <link rel="shortcut icon" href="/images/favicon_io/favicon.ico" type="image/x-icon">
-  
-    <meta name="theme-color" content="#0f172a">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/favicon_io/site.webmanifest" />
+    <link
+      rel="shortcut icon"
+      href="/images/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <meta name="theme-color" content="#0f172a" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  
-<body>
-  <div id="scroll-progress"></div>
 
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <a href="Index.html"><img src="Images/Logo_los_transparant.png" alt="Social Media Manager logo" class="nav-logo"/></a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="Index.html">Home</a></li>
-        <li><a href="About.html">Over ons</a></li>
-        <li><a href="Diensten.html">Diensten</a></li>
-        <li><a href="Portfolio.html">Portfolio</a></li>
-        <li><a href="Blog.html">Blog</a></li>
-      </ul>
-      <a href="Contact.html" class="btn contact-btn">Contact</a>
-      
-      <!-- Hamburger Menu Button -->
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-    
-    <!-- Mobile Navigation Overlay -->
-    <div class="mobile-nav-overlay">
-      <ul class="mobile-nav-links">
-        <li style="--i:1"><a href="Index.html">Home</a></li>
-        <li style="--i:2"><a href="About.html">Over ons</a></li>
-        <li style="--i:3"><a href="Diensten.html">Diensten</a></li>
-        <li style="--i:4"><a href="Portfolio.html">Portfolio</a></li>
-        <li style="--i:5"><a href="Blog.html">Blog</a></li>
-      </ul>
-      <div class="mobile-contact-btn">
-        <a href="Contact.html" class="btn contact-btn">Contact</a>
-      </div>
-    </div>
-  </header>
+  <body>
+    <div id="scroll-progress"></div>
 
-  <main>
-    <h1 class="page-title">Blog</h1>
-    <section class="about-hero">
-      <div class="about-left">
-        <div class="logo-subpage">
-          <img src="Images/Logo_volledig_transparant.png" alt="Social Media Manager logo" class="logo-page" />
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="Index.html"
+            ><img
+              src="Images/Logo_los_transparant.png"
+              alt="Social Media Manager logo"
+              class="nav-logo"
+          /></a>
         </div>
-        <div class="about-text">
-          <h2><span>Social media is onze passie.</span></h2>
-          <p class="subtitle">Wij helpen bedrijven groeien door strategische zichtbaarheid.</p>
-        </div>
-      </div>
-      <div class="about-right">
-        <img src="Images/Blog.jpg" alt="Ons team in gesprek" class="w-full h-auto border-0 outline-none shadow-none" />
-      </div>
-    </section>
-    <section class="promo-section">
-      <h2 class="reveal">Inzichten & Expertise</h2>
-      <p class="reveal">
-        Ontdek de laatste trends, tips en strategieën op het gebied van social media marketing.
-        Onze experts delen hun kennis om jouw online aanwezigheid naar een hoger niveau te tillen.
-      </p>
-    </section>
-
-    <!-- Blog Posts Grid -->
-    <section class="blog-section">
-      <div class="blog-container">
-        
-
-
-
-      </div>
-    </section>
-
-    <section class="promo-section">
-      <h2>Blijf op de hoogte</h2>
-      <p>
-        Wil je als eerste onze nieuwste inzichten en tips ontvangen? 
-        Neem contact met ons op voor een vrijblijvend gesprek over hoe wij jouw social media strategie kunnen versterken.
-      </p>
-      <a href="Contact.html" class="btn purple-btn">Plan een kennismaking in</a>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-container">
-      <div class="footer-logo">
-        <img src="Images/Logo_volledig_wit.png" alt="Social Media Manager logo" />
-      </div>
-      
-      <div class="footer-links">
-        <h3>Navigatie</h3>
-        <ul>
+        <ul class="nav-links">
           <li><a href="Index.html">Home</a></li>
           <li><a href="About.html">Over ons</a></li>
           <li><a href="Diensten.html">Diensten</a></li>
           <li><a href="Portfolio.html">Portfolio</a></li>
           <li><a href="Blog.html">Blog</a></li>
-          <li><a href="Contact.html">Contact</a></li>
         </ul>
-      </div>
-      
-      <div class="footer-contact">
-        <h3>Contact</h3>
-        <p>
-          <a href="tel:+31629812928">
-            <i class="fas fa-phone"></i> Telefoon: +31 629 812 928
-          </a>
-        </p>
-        <p>
-          <a href="https://maps.app.goo.gl/9tiDGBhQmoLtqPJu5" target="_blank">
-            <i class="fas fa-map-marker-alt"></i> Dorpsplein 1, 6733 AV Wekerom
-          </a>
-        </p>
-      </div>
-      
-      
-      <div class="footer-social">
-        <h3>Volg ons</h3>
-        <div class="social-icons">
-          <a href="https://www.instagram.com/rocket.network.agency/" aria-label="Instagram" target="_blank"><i class="ab fab fa-instagram fa-sm"></i></a>
-          <a href="https://www.linkedin.com/in/julian-van-beek-35276b241/" aria-label="LinkedIn" target="_blank"><i class="ab fab fa-linkedin-in fa-sm"></i></a>
-          <a href="https://wa.me/31629812928?text=Hallo%20ik%20heb%20interesse%20in%20jullie%20social%20media%20dienst" aria-label="Whatsapp"><i class="ab fab fa-whatsapp fa-sm" target="_blank"></i></a>
+        <a href="Contact.html" class="btn contact-btn">Contact</a>
+
+        <!-- Hamburger Menu Button -->
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+      <!-- Mobile Navigation Overlay -->
+      <div class="mobile-nav-overlay">
+        <ul class="mobile-nav-links">
+          <li style="--i: 1"><a href="Index.html">Home</a></li>
+          <li style="--i: 2"><a href="About.html">Over ons</a></li>
+          <li style="--i: 3"><a href="Diensten.html">Diensten</a></li>
+          <li style="--i: 4"><a href="Portfolio.html">Portfolio</a></li>
+          <li style="--i: 5"><a href="Blog.html">Blog</a></li>
+        </ul>
+        <div class="mobile-contact-btn">
+          <a href="Contact.html" class="btn contact-btn">Contact</a>
         </div>
       </div>
-    </div>
-    
-    <div class="footer-bottom">
-      <p>&copy; 2025 socialmediamanager.nl | <a href="https://twinpixel.nl/">Made with ❤️ by TwinPixel</a></p>
-    </div>
-  </footer>
+    </header>
 
-  
-  <!-- Animation Script -->
-  <script>
-    // Scroll animation
-    function revealOnScroll() {
-      const reveals = document.querySelectorAll('.reveal');
-      
-      for (let i = 0; i < reveals.length; i++) {
-        const windowHeight = window.innerHeight;
-        const elementTop = reveals[i].getBoundingClientRect().top;
-        const elementVisible = 150;
-        
-        if (elementTop < windowHeight - elementVisible) {
-          reveals[i].classList.add('active');
+    <main>
+      <h1 class="page-title">Blog</h1>
+      <section class="about-hero">
+        <div class="about-left">
+          <div class="video-subpage">
+            <!-- Vervang de afbeelding door een video -->
+            <video id="introVideo" class="video-page" muted>
+              <source src="Videos/videolgo.mp4" type="video/mp4" />
+              Je browser ondersteunt geen video.
+            </video>
+          </div>
+          <div class="about-text">
+            <h2><span>Social media is onze passie.</span></h2>
+            <p class="subtitle">
+              Wij helpen bedrijven groeien door strategische zichtbaarheid.
+            </p>
+          </div>
+        </div>
+        <div class="about-right">
+          <img
+            src="Images/Blog.jpg"
+            alt="Ons team in gesprek"
+            class="w-full h-auto border-0 outline-none shadow-none"
+          />
+        </div>
+      </section>
+      <section class="promo-section">
+        <h2 class="reveal">Inzichten & Expertise</h2>
+        <p class="reveal">
+          Ontdek de laatste trends, tips en strategieën op het gebied van social
+          media marketing. Onze experts delen hun kennis om jouw online
+          aanwezigheid naar een hoger niveau te tillen.
+        </p>
+      </section>
+
+      <!-- Blog Posts Grid -->
+      <section class="blog-section">
+        <div class="blog-container"></div>
+      </section>
+
+      <section class="promo-section">
+        <h2>Blijf op de hoogte</h2>
+        <p>
+          Wil je als eerste onze nieuwste inzichten en tips ontvangen? Neem
+          contact met ons op voor een vrijblijvend gesprek over hoe wij jouw
+          social media strategie kunnen versterken.
+        </p>
+        <a href="Contact.html" class="btn purple-btn"
+          >Plan een kennismaking in</a
+        >
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img
+            src="Images/Logo_volledig_wit.png"
+            alt="Social Media Manager logo"
+          />
+        </div>
+
+        <div class="footer-links">
+          <h3>Navigatie</h3>
+          <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About.html">Over ons</a></li>
+            <li><a href="Diensten.html">Diensten</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p>
+            <a href="tel:+31629812928">
+              <i class="fas fa-phone"></i> Telefoon: +31 629 812 928
+            </a>
+          </p>
+          <p>
+            <a href="https://maps.app.goo.gl/9tiDGBhQmoLtqPJu5" target="_blank">
+              <i class="fas fa-map-marker-alt"></i> Dorpsplein 1, 6733 AV
+              Wekerom
+            </a>
+          </p>
+        </div>
+
+        <div class="footer-social">
+          <h3>Volg ons</h3>
+          <div class="social-icons">
+            <a
+              href="https://www.instagram.com/rocket.network.agency/"
+              aria-label="Instagram"
+              target="_blank"
+              ><i class="ab fab fa-instagram fa-sm"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/julian-van-beek-35276b241/"
+              aria-label="LinkedIn"
+              target="_blank"
+              ><i class="ab fab fa-linkedin-in fa-sm"></i
+            ></a>
+            <a
+              href="https://wa.me/31629812928?text=Hallo%20ik%20heb%20interesse%20in%20jullie%20social%20media%20dienst"
+              aria-label="Whatsapp"
+              ><i class="ab fab fa-whatsapp fa-sm" target="_blank"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 socialmediamanager.nl |
+          <a href="https://twinpixel.nl/">Made with ❤️ by TwinPixel</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Animation Script -->
+    <script>
+      // Scroll animation
+      function revealOnScroll() {
+        const reveals = document.querySelectorAll(".reveal");
+
+        for (let i = 0; i < reveals.length; i++) {
+          const windowHeight = window.innerHeight;
+          const elementTop = reveals[i].getBoundingClientRect().top;
+          const elementVisible = 150;
+
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          }
         }
       }
-    }
-    
-    window.addEventListener('scroll', revealOnScroll);
-    
-    // Trigger on initial load
-    window.addEventListener('load', function() {
-      revealOnScroll();
-    });
-  </script>
 
+      window.addEventListener("scroll", revealOnScroll);
 
-  <!-- Blog posts inladen vanaf blog-index.json -->
-  <script>
-    fetch(window.location.origin + '/blog-index.json')
+      // Trigger on initial load
+      window.addEventListener("load", function () {
+        revealOnScroll();
+      });
+    </script>
 
-      .then(response => response.json())
-      .then(posts => {
-        const container = document.querySelector('.blog-container');
-  
-        posts.forEach((post, index) => {
-          const article = document.createElement('article');
-          article.className = 'blog-post reveal';
-          article.setAttribute('data-id', `post-${index + 1}`);
-  
-          article.innerHTML = `
+    <!-- Blog posts inladen vanaf blog-index.json -->
+    <script>
+      fetch(window.location.origin + "/blog-index.json")
+        .then((response) => response.json())
+        .then((posts) => {
+          const container = document.querySelector(".blog-container");
+
+          posts.forEach((post, index) => {
+            const article = document.createElement("article");
+            article.className = "blog-post reveal";
+            article.setAttribute("data-id", `post-${index + 1}`);
+
+            article.innerHTML = `
           <div class="blog-image">
            <a href="${post.path}">
            <img src="${post.thumbnail}" alt="${post.title}" data-thumbnail />
            </a>
           </div>
             <div class="blog-content">
-              <span class="blog-date" data-date>${new Date(post.date).toLocaleDateString('nl-NL', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
+              <span class="blog-date" data-date>${new Date(
+                post.date
+              ).toLocaleDateString("nl-NL", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
               })}</span>
               <h3 data-title><a href="${post.path}">${post.title}</a></h3>
               <p class="blog-excerpt" data-excerpt>${post.excerpt}</p>
               <a href="${post.path}" class="btn orange-btn">Lees meer</a>
             </div>
           `;
-  
-          container.appendChild(article);
+
+            container.appendChild(article);
+          });
+
+          revealOnScroll(); // activeer animatie op nieuwe posts
+        })
+        .catch((error) => {
+          console.error("❌ Fout bij laden van blog-index.json:", error);
         });
-  
-        revealOnScroll(); // activeer animatie op nieuwe posts
-      })
-      .catch(error => {
-        console.error('❌ Fout bij laden van blog-index.json:', error);
+    </script>
+
+    <script>
+      window.addEventListener("scroll", () => {
+        const scrollProgress = document.getElementById("scroll-progress");
+        const scrollTop = window.scrollY;
+        const docHeight = document.body.scrollHeight - window.innerHeight;
+        const scrollPercent = (scrollTop / docHeight) * 100;
+        scrollProgress.style.width = scrollPercent + "%";
       });
-  </script>
-  
-  <script>
-    window.addEventListener('scroll', () => {
-      const scrollProgress = document.getElementById('scroll-progress');
-      const scrollTop = window.scrollY;
-      const docHeight = document.body.scrollHeight - window.innerHeight;
-      const scrollPercent = (scrollTop / docHeight) * 100;
-      scrollProgress.style.width = scrollPercent + '%';
-    });
-  </script>
-  
-  <a href="https://wa.me/31629812928?text=Hallo%20ik%20heb%20interesse%20in%20jullie%20social%20media%20dienst" 
-  class="whatsapp-float" 
-  target="_blank" 
-  aria-label="Chat met ons op WhatsApp">
-  <i class="ab fab fa-whatsapp"></i>
-  </a>
-  
-  <!-- Mobile Navigation Script -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const hamburger = document.querySelector('.hamburger');
-      const mobileNavOverlay = document.querySelector('.mobile-nav-overlay');
-      const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
-      
-      // Toggle mobile menu
-      hamburger.addEventListener('click', function() {
-        hamburger.classList.toggle('open');
-        mobileNavOverlay.classList.toggle('open');
-        document.body.classList.toggle('no-scroll');
-      });
-      
-      // Close mobile menu when a link is clicked
-      mobileNavLinks.forEach(link => {
-        link.addEventListener('click', function() {
-          hamburger.classList.remove('open');
-          mobileNavOverlay.classList.remove('open');
-          document.body.classList.remove('no-scroll');
+    </script>
+
+    <a
+      href="https://wa.me/31629812928?text=Hallo%20ik%20heb%20interesse%20in%20jullie%20social%20media%20dienst"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Chat met ons op WhatsApp"
+    >
+      <i class="ab fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Mobile Navigation Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger");
+        const mobileNavOverlay = document.querySelector(".mobile-nav-overlay");
+        const mobileNavLinks = document.querySelectorAll(".mobile-nav-links a");
+
+        // Toggle mobile menu
+        hamburger.addEventListener("click", function () {
+          hamburger.classList.toggle("open");
+          mobileNavOverlay.classList.toggle("open");
+          document.body.classList.toggle("no-scroll");
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileNavLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            hamburger.classList.remove("open");
+            mobileNavOverlay.classList.remove("open");
+            document.body.classList.remove("no-scroll");
+          });
         });
       });
-    });
-  </script>
-</body>
+    </script>
+    <script>
+      // Verkrijg de video
+      const video = document.getElementById("introVideo");
+
+      // Speel de video automatisch af wanneer de pagina wordt geladen
+      window.addEventListener("load", () => {
+        video.play();
+      });
+
+      // Zorg ervoor dat de video stopt op het laatste frame en niet teruggaat naar het begin
+      video.onended = function () {
+        video.pause(); // Zet de video op pauze
+        video.currentTime = video.duration; // Zet de tijd van de video naar het laatste frame
+      };
+    </script>
+  </body>
 </html>
