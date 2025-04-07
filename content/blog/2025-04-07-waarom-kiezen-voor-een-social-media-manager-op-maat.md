@@ -5,7 +5,9 @@ thumbnail: https://cdn.shopify.com/s/files/1/2303/2711/files/10-tips-to-create-t
 excerpt: Hoe wij social media volledig uit handen nemen en omzetten in resultaat
   – zonder standaardpakketten, met echte impact.
 ---
-Veel ondernemers voelen de druk om zichtbaar te zijn op social media, maar hebben simpelweg geen tijd of kennis om hier echt het verschil te maken. Toch is een sterke online aanwezigheid tegenwoordig onmisbaar. Met socialmediamanager.nl nemen wij dit werk volledig uit handen – op een manier die past bij jouw bedrijf.\
+Veel ondernemers voelen de druk om zichtbaar te zijn op social media, maar hebben simpelweg geen tijd of kennis om hier echt het verschil te maken. Toch is een sterke online aanwezigheid tegenwoordig onmisbaar. Met socialmediamanager.nl nemen wij dit werk volledig uit handen – op een manier die past bij jouw bedrijf.
+
+\
 **Wat doen wij precies?**
 Geen standaardpakketjes of generieke posts. Wij bouwen een maatwerktraject dat aansluit bij jouw merk, doelgroep en doelen. Denk aan:
 
