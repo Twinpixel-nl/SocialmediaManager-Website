@@ -1,15 +1,11 @@
 ---
 title: Waarom kiezen voor een social media manager op maat?
 date: 2025-04-07T07:48:49.578Z
-thumbnail: https://static.vecteezy.com/system/resources/thumbnails/012/972/495/small/working-desk-with-paper-sheet-with-social-media-planning-flat-lay-photo.jpg
-excerpt: Veel ondernemers voelen de druk om zichtbaar te zijn op social media,
-  maar hebben simpelweg geen tijd of kennis om hier echt het verschil te maken.
-  Toch is een sterke online aanwezigheid tegenwoordig onmisbaar. Met
-  socialmediamanager.nl nemen wij dit werk volledig uit handen – op een manier
-  die past bij jouw bedrijf.
+thumbnail: https://cdn.shopify.com/s/files/1/2303/2711/files/10-tips-to-create-the-perfect-flat-lay-for-social-media-blogs-and-websites_12.jpg?v=1593586637
+excerpt: Hoe wij social media volledig uit handen nemen en omzetten in resultaat
+  – zonder standaardpakketten, met echte impact.
 ---
-
-
+Veel ondernemers voelen de druk om zichtbaar te zijn op social media, maar hebben simpelweg geen tijd of kennis om hier echt het verschil te maken. Toch is een sterke online aanwezigheid tegenwoordig onmisbaar. Met socialmediamanager.nl nemen wij dit werk volledig uit handen – op een manier die past bij jouw bedrijf.\
 **Wat doen wij precies?**
 Geen standaardpakketjes of generieke posts. Wij bouwen een maatwerktraject dat aansluit bij jouw merk, doelgroep en doelen. Denk aan:
 
