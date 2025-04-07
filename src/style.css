@@ -643,6 +643,21 @@ h3 {
   margin: 0;
 }
 
+.nav-links a.current {
+  color: #c084fc; /* Zorg ervoor dat de actieve link paars blijft */
+}
+/* Voeg een streep onder de actieve link */
+.nav-links a.current::after {
+  content: "";
+  position: absolute;
+  width: 100%; /* Maak de streep zo breed als de tekst */
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #c084fc; /* De kleur van de streep */
+  transition: width 0.3s ease; /* Voeg een overgang toe voor de animatie */
+}
+
 .nav-links a {
   color: white;
   text-decoration: none;
