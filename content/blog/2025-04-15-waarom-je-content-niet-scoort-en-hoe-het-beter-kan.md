@@ -68,4 +68,4 @@ Bij Socialmediamanager.nl maken we content die past bij jouw bedrijf én bij je 
 - - -
 
 **📲 Plan een gratis strategiegesprek en ontdek hoe jouw content weer gaat werken.**\
-[Plan hier je call](#) of stuur een WhatsAppje
+[Plan hier je call](socialmediamanager.nl/contact) of stuur een WhatsAppje
