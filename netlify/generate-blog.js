@@ -175,6 +175,10 @@ files.forEach(file => {
   });
 });
 
+// Sorteer blogposts op datum (nieuwste eerst)
+index.sort((a, b) => new Date(b.date) - new Date(a.date));
+
 // Schrijf blog-index.json
 fs.writeFileSync(indexFile, JSON.stringify(index, null, 2));
+
 console.log("✅ Blogpagina's en index gegenereerd.");
